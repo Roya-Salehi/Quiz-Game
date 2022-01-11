@@ -1,0 +1,12 @@
+$breakpoints: (
+  // phones, 600px and down:
+  'extra-small': '(max-width: 345px)',
+  // portrait tablets and large phones, 600px and up:
+  // 'small': '(min-width: 600px)',
+  // landscape tablets, 768px and up:
+  'medium': '(min-width: 768px)',
+  // laptops/desktops, 992px and up:
+  'large': '(min-width: 992px)',
+  //large laptops and desktops, 1200px and up:
+  'extra-large': '(min-width: 2400px)'
+);

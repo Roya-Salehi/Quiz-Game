@@ -1,0 +1,224 @@
+/* ============
+VARIABLEs declaration
+============ */
+:root {
+  --clr-primary-100: #404040;
+  --clr-primary-200: #333333;
+  --clr-primary-300: #262626;
+  --clr-primary-400: #1a1a1a;
+  --clr-primary-500: #0d0d0d;
+  --clr-secondary-100: #f0dbe2;
+  --clr-secondary-200: #e0b8c5;
+  --clr-secondary-300: #d9a6b6;
+  --clr-secondary-400: #d194a7;
+  --clr-secondary-500: #c2708a;
+  --clr-light-100: #e0ebeb;
+  --clr-light-200: #d1e1e1;
+  --clr-light-300: #c1d7d7;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+/* =============
+   Start Of RESETs
+   =============
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* =============
+   End Of RESETs
+   =============
+*/
+/* =============
+   Start of TYPOGRAPGY
+   =============
+*/
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  color: var(--clr-secondary-400);
+  background-color: var(--clr-primary-300);
+}
+@media only screen and (max-width: 345px) {
+  body {
+    font-size: 0.625rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  body {
+    font-size: 1.375rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-black);
+  font-stretch: normal;
+  line-height: 1.1;
+  color: var(--clr-secondary-300);
+}
+
+/* =============
+   End of TYPOGRAPGY
+   =============
+*/
+/* =============
+   Start of NAVIGATION Styling
+   =============
+*/
+/* =============
+   End of NAVIGATION Styling
+   =============
+*/
+/* =============
+   Start of HOME Styling
+   =============
+*/
+/* =============
+   End of HOME Styling
+   =============
+*/
+/* =============
+   Start of FOOTER Styling
+   =============
+*/
+/* =============
+   End of FOOTER Styling
+   =============
+*/
+/* =============
+   Start of BUTTON styles
+   =============
+*/
+.btn {
+  all: unset;
+}
+
+/* =============
+   End of BUTTON styles
+   =============
+*/
+/* =============
+   Start of CARDs styles
+   =============
+*/
+/* =============
+   End of CARDs styles
+   =============
+*/
+/* =============
+   Start of FORM Styles
+   =============
+*/
+/* =============
+   End of FORM Styles
+   =============
+*/
+/* 
+
+***** Table of content: *****
+
+1. Custom Properties
+
+2. Resets 
+
+3. Typography
+
+4. Layouts
+    4.1 Navigation
+    4.2 Home
+    4.3 Footer
+
+5. Components
+  5.1 Buttons
+  5.2 Cards
+  5.3 Forms
+
+*/
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

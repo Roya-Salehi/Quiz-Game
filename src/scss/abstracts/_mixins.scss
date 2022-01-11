@@ -1,0 +1,59 @@
+@use 'breakpoints' as *;
+
+@mixin media-query($key) {
+  $raw-query: map-get($breakpoints, $key);
+  $query: if(
+    type-of($raw-query) == 'string',
+    unquote($raw-query),
+    inspect($raw-query)
+  );
+
+  @media only screen and #{$query} {
+    @content;
+  }
+}
+
+@mixin transition($prop: all, $dur: 350ms, $func: ease-in-out, $delay: null) {
+  transition: $prop $dur $func $delay;
+}
+
+@mixin flex($just-cont: center, $ali-itm: center) {
+  display: flex;
+  justify-content: $just-cont;
+  align-items: $ali-itm;
+}
+
+@mixin pseudo(
+  $elem1: null,
+  $elem2: null,
+  $content: '',
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $pos: absolute
+) {
+  @if ($elem1 and $elem2) {
+    &::#{$elem1},
+    &::#{$elem2} {
+      content: $content;
+      inset: $top $right $bottom $left;
+      position: $pos;
+      @content;
+    }
+  } @else if $elem1 {
+    &::#{$elem1} {
+      content: $content;
+      inset: $top $right $bottom $left;
+      position: $pos;
+      @content;
+    }
+  } @else if $elem2 {
+    &::#{$elem2} {
+      content: $content;
+      inset: $top $right $bottom $left;
+      position: $pos;
+      @content;
+    }
+  }
+}

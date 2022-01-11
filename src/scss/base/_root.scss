@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+/* ============
+VARIABLEs declaration
+============ */
+
+:root {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $weight, $value in $font-weights {
+    --fw-#{$weight}: #{$value};
+  }
+}
